@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivot4J Team
+Implementation-Title: Pivot4J Pentaho
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: org.pivot4j
+Specification-Vendor: Pivot4J Team
+Build-Jdk: 1.7.0_72
+Built-By: super
+Created-By: Maven Integration for Eclipse
+Specification-Title: Pivot4J Pentaho
+Specification-Version: 1.0-SNAPSHOT
+

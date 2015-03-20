@@ -1,0 +1,15 @@
+org.pivot4j.analytics.component
+org.pivot4j.analytics.component.tree
+org.pivot4j.analytics.config
+org.pivot4j.analytics.converter
+org.pivot4j.analytics.datasource
+org.pivot4j.analytics.datasource.simple
+org.pivot4j.analytics.exception
+org.pivot4j.analytics.listener
+org.pivot4j.analytics.property
+org.pivot4j.analytics.repository
+org.pivot4j.analytics.repository.file
+org.pivot4j.analytics.state
+org.pivot4j.analytics.ui
+org.pivot4j.analytics.ui.chart
+org.pivot4j.analytics.ui.navigator

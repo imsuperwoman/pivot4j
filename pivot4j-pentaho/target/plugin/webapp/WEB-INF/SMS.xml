@@ -1,0 +1,80 @@
+<Schema name="SMS">
+  <Cube name="SMS_CUBE" visible="true" description="SMS CUBE" cache="true" enabled="true">
+    <Table name="V_SMS_REPORT" schema="SMS">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Lot Info">
+      <Hierarchy name="Lot" visible="true" hasAll="true">
+        <Level name="Lot Number" visible="true" column="ALOT_NUMBER" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Department" visible="true" column="DEPARTMENT" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Devc Number" visible="true" column="DEVC_NUMBER" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Machine ID" visible="true" column="MACH_ID" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Process Step" visible="true" column="STEP_NAME" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Defect Info">
+      <Hierarchy name="Defect" visible="true" hasAll="true">
+        <Level name="Defect Code" visible="true" column="CODE_MAP_CODE" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Substrate Info">
+      <Hierarchy name="Substrate" visible="true" hasAll="true">
+        <Level name="Substrate ID" visible="true" column="SUBSTRATE_ID" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Process Step" visible="true" column="STEP_NAME" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Machine ID" visible="true" column="MACH_ID" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Substrate Material Info">
+      <Hierarchy name="Substrate Material" visible="true" hasAll="true">
+        <Level name="Substrate Material" visible="true" column="MTRL_TYPE" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Substrate Status Info">
+      <Hierarchy name="Substrate Status" visible="true" hasAll="true">
+        <Level name="Status" visible="true" column="STATUS" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Time Info">
+      <Hierarchy name="Time" visible="true" hasAll="true">
+        <Level name="Processed Time" visible="true" column="PROCESSED_TIME" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Machine Info">
+      <Hierarchy name="Machine" visible="true" hasAll="true">
+        <Level name="Machine ID" visible="true" column="MACH_ID" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Process Info">
+      <Hierarchy name="Process" visible="true" hasAll="true">
+        <Level name="Process Step" visible="true" column="STEP_NAME" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" name="Lot ID Info">
+      <Hierarchy name="Lot ID" visible="true" hasAll="true">
+        <Level name="Lot Number" visible="true" column="ALOT_NUMBER" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" name="Substrate ID Info">
+      <Hierarchy name="Substrate ID" visible="true" hasAll="true">
+        <Level name="Substrate ID" visible="true" column="SUBSTRATE_ID" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Cells" column="SEQ_ID" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

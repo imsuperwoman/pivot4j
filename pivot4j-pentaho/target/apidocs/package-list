@@ -1,0 +1,5 @@
+org.pivot4j.pentaho.content
+org.pivot4j.pentaho.datasource
+org.pivot4j.pentaho.repository
+org.pivot4j.pentaho.servlet
+org.pivot4j.pentaho.ui

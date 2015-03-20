@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main" unless="maven.test.skip">
+  <unzip dest="C:\dev\pivot4j\pivot4j-analytics\target/pivot4j-analytics-1.0-SNAPSHOT/WEB-INF" overwrite="false" src="C:\dev\pivot4j\pivot4j-analytics/../src/test/data/derby-foodmart.zip"/>
+</target>
+</project>
